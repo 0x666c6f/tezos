@@ -1,0 +1,24 @@
+{
+  "mnemonic": [
+    "primary",
+    "bid",
+    "enrich",
+    "ocean",
+    "flush",
+    "gasp",
+    "monitor",
+    "yellow",
+    "kingdom",
+    "tuition",
+    "lens",
+    "gorilla",
+    "wink",
+    "carpet",
+    "frost"
+  ],
+  "secret": "e0ce81c0a5f10ac90fc9374723ce0b14ea34b545",
+  "amount": "17535647865",
+  "pkh": "tz1KhZWcRsCJnotUxaTEs3odZvm4TfSxJjMd",
+  "password": "v5OxoNQtdP",
+  "email": "qnnefxxy.arwkpojw@tezos.example.org"
+}

@@ -1,0 +1,2 @@
+private key: edskRmUJwv6Y89aN9iF71TpjBLWps9ewMSRzEc6faUdnaxGecZ6JDR43EiqPHP47PmKJ2XPZBMY3mrmFqtSJLbcCTW9KbprCxD
+contract address: KT1UKUJ346hhnJxEoPQm96Tjbkn3k75tp895
