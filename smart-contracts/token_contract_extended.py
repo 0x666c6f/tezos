@@ -35,7 +35,7 @@ class FA12_core(sp.Contract):
         self.data.balances[sp.sender].approvals[params.spender] = params.value
 
     def addAddressIfNecessary(self, address):
-        sp.
+
         if ~ self.data.balances.contains(address):
             self.data.balances[address] = sp.record(balance=0, approvals={})
 
