@@ -187,9 +187,11 @@ def test_crowdfunding():
     scenario += c1
 
     scenario += c1.contribute(2).run(sender=alice)
+    scenario += c1.contribute(10).run(sender=bob)
+    scenario += c1.contribute(2).run(sender=owner)
 
 
-#@sp.add_test(name="FA12")
+# @sp.add_test(name="FA12")
 # def test_token():
 #     scenario = sp.test_scenario()
 #     scenario.h1("FA1.2 template - Fungible assets")
