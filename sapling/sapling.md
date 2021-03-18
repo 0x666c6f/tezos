@@ -7,6 +7,7 @@ https://opam.ocaml.org/doc/Install.html
 
 ## set up
 ```shell
+> sh <(curl -sL https://raw.githubusercontent.com/ocaml/opam/master/shell/install.sh)
 > sudo apt install opam
 > opam init
 > eval $(opam env)
