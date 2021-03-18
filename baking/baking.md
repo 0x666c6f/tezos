@@ -59,7 +59,34 @@ make
 ./tezos-node run --rpc-addr 127.0.0.1:8732 --connections 10 --data-dir ~/tezos-edonet --network edo2net
 ```
 
-> ./tezos-client -E http://localhost:8732 activate account "baker_account" with "../baking/faucet.json" --force
 
-> ./tezos-client -E http://localhost:8732 get balance for baker_account
+## Client
+```shell
+./tezos-client -E http://localhost:8732 activate account "baker_account" with "../baking/faucet.json"
+./tezos-client -E http://localhost:8732 get balance for baker_account
 9401.766724 ꜩ
+./tezos-client -E http://localhost:8732 register key "baker_account" as delegate
+```
+
+## Baking
+In separate terminals:
+
+```shell
+cd tezos-sources
+./tezos-baker-008-PtEdo2Zk -E http://localhost:8732 run with local node "$HOME/tezos-edonet" "baker_account"
+```
+
+```shell
+cd tezos-sources
+./tezos-endorser-008-PtEdo2Zk run "baker_account"
+```
+
+```shell
+cd tezos-sources
+./tezos-accuser-008-PtEdo2Zk run
+```
+
+## Voting
+./tezos-client originate account "my_originated" for "my_account2" transferring 6900 from "my_account2" --delegate "my_account" --delegatable
+./tezos-client set delegate for "my_originated" to "my_account"
+
